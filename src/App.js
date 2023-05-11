@@ -13,7 +13,6 @@ function App() {
       <Input />
       <StTitle>Modal</StTitle>
       <Modal />
-      <StTitle>Select</StTitle>
       <Select />
     </div>
   );
