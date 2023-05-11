@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import Button from './Button';
+import Input from './Input';
+import Modal from './Modal';
+import Select from './Select';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <StTitle>Button</StTitle>
+      <Button />
+      <StTitle>Input</StTitle>
+      <Input />
+      <StTitle>Modal</StTitle>
+      <Modal />
+      <StTitle>Select</StTitle>
+      <Select />
     </div>
   );
 }
 
 export default App;
+
+const StTitle = styled.h1`
+  font-size: 35px;
+  font-weight: 600;
+  margin: 24px 8px;
+`;
